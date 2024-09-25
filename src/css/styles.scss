@@ -1,0 +1,36 @@
+@mixin base {
+    background: #2b2b2b;
+    color: #fff;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;
+}
+
+@mixin styleh1 {
+    font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 67px;
+        line-height: 1.1;
+        text-transform: capitalize;
+        color: var(--text);
+}
+
+@mixin styleh2 {
+font-size: 51px;
+    line-height: 1.1;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+@mixin capilone {
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.1;
+        color: var(--text);
+}
+
+$border-violet:#a259ff;
+$gradient1: linear-gradient(170deg, #a259ff 0%, #377df7 100%);
+$gradient2: linear-gradient(149deg, #a259ff 0%, #ff6250 100%);

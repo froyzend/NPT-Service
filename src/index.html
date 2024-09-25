@@ -4,19 +4,48 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>NPT-service</title>
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <!-- Логотип -->
+        <a class="navbar-brand" href="#">NFT Marketplace</a>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+        <!-- Кнопка бургер-меню для мобильных устройств -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <load src="./partials/footer.html" />
+        <!-- Навигационные ссылки -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Marketplace</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rankings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Connect a wallet</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary" href="#">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <script type="module" src="./main.js"></script>
   </body>

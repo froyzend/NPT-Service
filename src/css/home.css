@@ -1,0 +1,22 @@
+/* Мобильная версия */
+@media (max-width: 576px) {
+    header {
+        padding: 15px 30px;
+    }
+}
+
+/* Планшет */
+@media (min-width: 577px) and (max-width: 991px) {
+    header {
+        padding: 15px 50px;
+
+    }
+}
+
+/* Десктоп */
+@media (min-width: 992px) {
+    header {
+        padding: 20px 50px;
+
+    }
+}
